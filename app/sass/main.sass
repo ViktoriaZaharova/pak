@@ -158,12 +158,31 @@ label
   color: #fff
   box-shadow: 8px 8.9px 16px 0 rgba(3, 4, 2, 0.26)
   border: solid 0 #ff2a1e
+
   &:hover
     background: #000
     color: #fff
+
   .btn-icon
     width: 11px
     margin: 0 0 0 30px
+
+.btn-border
+  border: solid 1px #fff
+  color: #fff
+  height: 33px
+  font-size: 12px
+  font-weight: normal
+  padding: 0 16px 0 19px
+  max-width: 155px
+  justify-content: space-between
+
+  .btn-icon
+    width: 8px
+
+  &:hover
+    background: $accent
+    color: #fff
 
 .bg-accent
   background: $text
@@ -216,6 +235,32 @@ h3
 .slick-next
   right: 0
 
+.slick-dots
+  display: flex
+  flex-direction: column
+  align-items: center
+  position: relative
+  bottom: 0
+
+  li
+    width: 8px
+    height: 8px
+    cursor: pointer
+    transition: .3s ease
+    border-radius: 50%
+    background: #fff
+    margin: 0 0 13px
+    padding: 0
+
+    &:last-child
+      margin: 0
+
+    button
+      display: none
+
+  .slick-active
+    background: $accent
+
 
 .phone
   color: #fff
@@ -225,6 +270,7 @@ h3
   background: $accent
   box-shadow: 8px 8.9px 16px 0 rgba(3, 4, 2, 0.26)
   border: solid 0 #ff2a1e
+
   &:hover
     color: $text
 
@@ -241,18 +287,192 @@ h3
 header
   .footer-box
     padding: 16px 40px 16px 40px
+
     &:first-child
       padding: 16px 40px 16px 0
+
     &:last-child
       padding: 16px 0 16px 40px
 
+  .menu
+    li
+      a
+        position: relative
+
+        &:before
+          content: ''
+          position: absolute
+          height: 4px
+          width: 60px
+          left: 50%
+          transform: translate(-50%, 0)
+          bottom: -34px
+          z-index: 1
+
+        &:hover
+          &:before
+            background: $accent
+
 .header-top
-  border-bottom: 1px solid #fff
   .list-social
     padding: 20px 0 17px 40px
     margin: 0 0 0 auto
     max-width: 450px
+    width: 33%
+
+.header-bottom
+  border:
+    top: 1px solid #fff
+    bottom: 1px solid #fff
+
+  .list-social
+    li
+      &:first-child
+        display: none
+
+.btn-burger
+  width: 24px
+  height: 20px
+  display: none
+  justify-content: space-between
+  align-items: center
+  flex-direction: column
+  cursor: pointer
+  margin: 0 0 0 20px
+
+  span
+    display: block
     width: 100%
+    background: #fff
+    border-radius: 3px
+    height: 2px
+
+.mobile-menu
+  display: none
+  position: fixed
+  z-index: 5
+  right: 0
+  top: 0
+  width: 100%
+  max-width: 280px
+  height: 100%
+  overflow-y: auto
+  padding: 30px
+  background: $text
+  .menu
+    font-size: 18px
+    margin: 20px 0
+    li
+      width: 100%
+      margin: 0 0 15px
+  .phone
+    width: fit-content
+    margin: 20px 0 0
+    font-size: 18px
+
+.btn-close
+  width: 20px
+  height: 20px
+  cursor: pointer
+  position: absolute
+  right: 30px
+  top: 30px
+  &:before, &:after
+    content: ''
+    position: absolute
+    left: 10px
+    top: 0
+    width: 2px
+    height: 100%
+    background: #fff
+  &:before
+    transform: rotate(45deg)
+  &:after
+    transform: rotate(135deg)
+
+//home
+.home
+  position: relative
+
+.home-slider-nav
+  position: absolute
+  height: 100%
+  right: 62px
+  top: 0
+  padding: 104px 0 72px
+  display: flex
+  flex-direction: column
+  align-items: center
+
+  .slick-dots
+    margin: 0 0 auto
+    order: -1
+
+  .slick-arrow
+    position: relative
+    top: 0
+    right: 0
+    left: 0
+    transform: none
+    filter: brightness(0) invert(1)
+
+.home-slider-item
+  padding: 72px 0
+  position: relative
+  width: 100%
+
+.home-slider
+  color: #fff
+
+.home-slider__bg
+  width: 100%
+  height: 100%
+  object-fit: cover
+  position: absolute
+  left: 0
+  top: 0
+
+.slider-images
+  width: 100%
+  display: flex
+  align-items: stretch
+  flex-wrap: wrap
+  justify-content: space-between
+
+  &__item
+    margin: 46px 0 0
+    max-width: 258px
+    width: 100%
+    height: 182px
+    display: flex
+    align-items: center
+    justify-content: center
+    border: 1px solid rgba(#fff, .5)
+    overflow: hidden
+
+    img
+      width: 100%
+      height: 100%
+      object-fit: cover
+
+.slide-title
+  text-transform: uppercase
+  margin: 0 0 22px
+  font-size: 153.5px
+  font-weight: 800
+  line-height: 1
+
+.home-slider-wrapper
+  width: 100%
+  display: flex
+  align-items: flex-end
+  justify-content: space-between
+  flex-wrap: wrap
+
+  .box-text
+    max-width: 555px
+    width: 100%
+
 
 //category
 .category
@@ -261,14 +481,17 @@ header
   align-items: stretch
   flex-wrap: wrap
   border-top: 1px solid #fff
+
   &-item
     flex: 1
     text-align: center
     position: relative
     border:
       right: 1px solid #fff
+
     &:last-child
       border-right: none
+
     &__title
       width: 100%
       text-align: center
@@ -281,16 +504,18 @@ header
       display: flex
       align-items: center
       justify-content: center
+
       &:before
         content: ''
         position: absolute
         bottom: -2px
         left: 50%
-        transform: translate(-50%,0)
+        transform: translate(-50%, 0)
         transition: .3s ease
         width: 60px
         height: 4px
         z-index: 1
+
     &__img
       width: 100%
       height: 316px
@@ -299,6 +524,7 @@ header
       align-items: center
       justify-content: center
       overflow: hidden
+
       &:before
         content: ''
         position: absolute
@@ -309,6 +535,7 @@ header
         background: #363636
         opacity: .4
         transition: .3s ease
+
       img
         width: 100%
         height: 100%
@@ -318,6 +545,7 @@ header
       .category-item__title
         &:before
           background: $accent
+
       .category-item__img
         &:before
           opacity: 0
@@ -325,6 +553,7 @@ header
 //our-approach
 .our-approach
   padding: 84px 0 0
+
   h2
     margin: 0 0 42px
 
@@ -336,6 +565,7 @@ header
   float: right
   height: 100%
   margin: 0 -15px 0 0
+
   img
     width: 100%
     height: 100%
@@ -349,6 +579,7 @@ header
   display: flex
   flex-direction: column
   justify-content: flex-end
+
   .number
     font-size: 242.6px
     line-height: 1
@@ -358,6 +589,7 @@ header
     left: 24px
     top: 17px
     z-index: -1
+
   .box-text
     margin: 11px 0 0 120px
     font-size: 20px
@@ -372,10 +604,12 @@ header
 //about
 .about
   padding: 82px 0 105px
+
   .box-text
     font-size: 30px
     max-width: 700px
     margin: 0 20px 0 auto
+
   h2
     margin: 0 0 38px
 
@@ -395,19 +629,24 @@ header
   border-right: solid 3px #ff2a1e
   font-size: 23px
   line-height: 1.13
+
   span
     display: block
     margin: 0 0 20px
+
   &__num
     font-size: 85px
     font-weight: bold
     margin: auto 0 12px
     line-height: 1
+
   &:first-child
     padding-left: 0
+
   &:last-child
     padding-right: 0
     border: none
+
   p
     min-height: 68px
 
@@ -419,6 +658,7 @@ header
   align-items: center
   justify-content: space-between
   font-size: 31.6px
+
   &__icon
     margin: 0 0 0 48px
     width: 32px
@@ -434,12 +674,14 @@ header
   justify-content: space-between
   flex-wrap: wrap
   width: 100%
+
   h5
     text-transform: uppercase
     font-weight: 800
     font-size: 31.5px
     color: $accent
     max-width: 330px
+
   .btn
     height: 69px
     max-width: 287px
@@ -451,10 +693,15 @@ header
 
 .clients-slider
   border-right: solid 1px #363636
+
   .slick-prev
     left: -100px
+
   .slick-next
     right: -100px
+
+  .slick-arrow
+    background: #fff
 
 
 .clients-box
@@ -466,6 +713,7 @@ header
   display: flex
   align-items: center
   justify-content: center
+
   img
     max-height: 100%
 
@@ -511,12 +759,13 @@ header
   min-width: 20px
   margin: 0 15px 0 0
   position: relative
+
   &:before
     content: ''
     position: absolute
     left: 50%
     top: 50%
-    transform: translate(-50%,-50%)
+    transform: translate(-50%, -50%)
     width: 14px
     height: 14px
 
@@ -530,6 +779,7 @@ header
   width: fit-content
   font-size: 14px
   padding: 10px 20px
+
   .btn-icon
     width: 21px
     margin: 0 0 0 14px
@@ -539,6 +789,7 @@ header
   max-width: 534px
   margin: 0 0 0 auto
   width: 100%
+
   &-row
     width: 100%
     display: flex
@@ -547,8 +798,10 @@ header
     flex-wrap: wrap
     padding: 40px 20px 45px
     border-bottom: 2px solid #949494
+
     &:first-child
       padding-top: 10px
+
     &:last-child
       border: none
       padding: 28px 20px
@@ -557,6 +810,7 @@ header
   color: #fff
   font-weight: bold
   font-size: 28.5px
+
   &:hover
     color: #949494
 
@@ -570,6 +824,7 @@ header
   font-size: 17px
   font-weight: bold
   color: #fff
+
   &:hover
     color: #949494
 
@@ -577,12 +832,14 @@ header
   color: #fff
   font-size: 20px
   font-weight: bold
+
   &:hover
     color: #949494
 
 //footer
 footer
   border: 1px solid #fff
+
   .logo
     margin: 0 43px 0 0
 
@@ -600,8 +857,10 @@ footer
   align-items: center
   flex-wrap: wrap
   padding: 44px 40px
+
   &:first-child
     padding: 44px 40px 44px 0
+
   &:last-child
     margin: 0
     padding: 44px 0 44px 40px
@@ -613,6 +872,7 @@ footer
   flex-wrap: wrap
   font-size: 20px
   width: 100%
+
   li
     margin: 0 59px 0 0
 
@@ -622,12 +882,13 @@ footer
     a
 
       color: #fff
+
       img
         width: 100%
+
       &:hover
         color: $accent
         font-weight: 600
-
 
 
 .list-social
@@ -635,15 +896,19 @@ footer
   align-items: center
   flex-wrap: wrap
   margin: 0 65px 0 0
+
   li
     margin: 0 38px 0 0
+
     &:last-child
       margin: 0
+
     a
       display: flex
       align-items: center
       justify-content: center
       color: #fff
+
       img
         width: 100%
 
@@ -662,9 +927,48 @@ footer
 .links-menu
   color: #fff
   font-size: 20px
+
   &:hover
     color: $accent
     font-weight: 600
+
+.modal-title
+  font-size: 20px
+  text-transform: uppercase
+  text-align: center
+  width: 100%
+  font-weight: bold
+
+.modal-header
+  border: none
+  .close
+    padding: 0
+    top: 15px
+    right: 15px
+    width: 18px
+    height: 18px
+    margin: 0
+    opacity: 1
+    position: absolute
+    &:before, &:after
+      content: ''
+      position: absolute
+      left: 9px
+      top: 0
+      width: 2px
+      height: 100%
+      background: $text
+    &:before
+      transform: rotate(45deg)
+    &:after
+      transform: rotate(135deg)
+
+.modal-content
+  .form-callback
+    button
+      font-size: 16px
+      height: 50px
+      margin: 20px 0 0
 
 @import "media"
 // Всегда в конце
