@@ -88,6 +88,22 @@
   .about
     padding: 40px 0
 
+  .services-callback-wrapper
+    h3
+      width: 55%
+      max-width: none
+
+  .services-callback-box
+    width: 45%
+    .form-callback
+      justify-content: space-between
+      label
+        width: 31%
+        margin: 0
+      button
+        width: 31%
+        margin: 0
+
 
 @media only screen and (max-width: 1400px)
   header .footer-box:first-child
@@ -154,6 +170,19 @@
   .official-box
     padding: 15px 20px
 
+  .services-callback-wrapper
+    padding: 30px
+    margin: 0 auto 30px
+    h3
+      font-size: 34px
+
+  .service-phone
+    font-size: 50px
+    padding: 30px 0
+
+  .services-callback
+    padding: 50px 0 0
+
 @media only screen and (max-width: 1200px)
   .header-top
     display: none
@@ -197,7 +226,48 @@
     font-size: 40px
     margin: 0 0 25px
 
+  .page-home-section
+    padding: 60px 0 80px
 
+  h1
+    font-size: 60px
+
+
+  .page-home-section h1
+    margin: 0 0 100px
+
+  .advantages-services-box
+    font-size: 16px
+
+  .advantages-services-box__icon
+    height: 90px
+
+  .advantages-services
+    padding: 50px 0
+
+  .list-dots
+    padding: 0
+    font-size: 20px
+
+  .services-section__img
+    margin: 0 0 30px
+    height: 280px
+
+  .services-section h2
+    margin: 0 auto 40px
+
+  .services-callback-wrapper h3
+    max-width: 600px
+
+  .service-phone
+    font-size: 60px
+
+  .services-callback-wrapper h3
+    font-size: 28px
+
+  .services-callback-box h4
+    font-size: 20px
+    margin: 0 0 15px
 
 /* Medium Devices, Desktops */
 @media only screen and (max-width: 992px)
@@ -296,6 +366,32 @@
     height: 50px
     font-size: 16px
 
+  .advantages-services-box
+    margin: 0 0 40px
+
+  .list-dots
+    li
+      margin: 0 0 24px
+
+  .advantages-box__icon
+    margin: 0 0 15px
+    height: 60px
+
+  .services-callback-box
+    width: 100%
+    h4
+      max-width: none
+      font-size: 20px
+
+  .services-callback-wrapper h3
+    width: 100%
+    font-size: 22px
+    max-width: none
+    margin: 0 0 20px
+    br
+      display: none
+
+
 /* Small Devices, Tablets */
 @media only screen and (max-width: 768px)
   .slide-title
@@ -308,6 +404,39 @@
   .slider-images__item
     margin: 30px 0 0
 
+  .page-home-section h1
+    margin: 0 0 40px
+
+  h1
+    font-size: 50px
+
+  .page-home-section .box-text
+    font-size: 20px
+    margin: 0
+
+  .list-dots
+    column-count: 1
+    font-size: 18px
+    br
+      display: none
+    li
+      padding: 0 0 0 20px
+      &:before
+        top: 7px
+
+  .service-phone
+    font-size: 40px
+    padding: 20px 0
+
+  .phone-service__icon
+    max-width: 60px
+
+  .services-callback-box .form-callback button
+    font-size: 14px
+
+  .manufacturers-section
+    padding: 50px 0 30px
+
 
 /* Extra Small Devices, Phones */
 @media only screen and (max-width: 576px)
@@ -316,7 +445,7 @@
       display: none
 
   .slider-images__item
-    width: 48%
+    width: 31%
     margin: 20px 0 0
 
   .home-slider-nav
@@ -370,6 +499,43 @@
   .about h2
     margin: 0 0 20px
 
+  .breadcrumb-section
+    padding: 20px 0
+
+  .breadcrumb
+    font-size: 16px
+
+  .advantages-services-box
+    text-align: center
+
+  .services-callback-box
+    .form-callback
+      label
+        width: 100%
+        margin: 0 0 15px
+        max-width: none
+      button
+        max-width: none
+        width: 100%
+
+  .service-phone
+    font-size: 30px
+
+  .services-callback-box h4
+    font-size: 18px
+
+  h1
+    font-size: 30px
+
+  .page-home-section .box-text
+    font-size: 18px
+
+  .manufacturers-box
+    height: 70px
+    padding: 14px 20px
+    font-size: 20px
+    margin: 0 0 25px
+
 @media only screen and (max-width: 480px)
   .slide-title
     font-size: 40px
@@ -382,6 +548,33 @@
   .official-box__row h5
     font-size: 20px
 
+  .slider-images__item
+    width: 49%
+
+  .home-slider__bg
+    min-width: 1000px
+    left: auto
+    right: 0
+
+  .home-slider-item
+    position: relative
+    &:before
+      content: ''
+      position: absolute
+      left: 0
+      top: 0
+      width: 100%
+      height: 1005px
+      background: #000
+      opacity: .4
+      z-index: 1
+    .container
+      position: relative
+      z-index: 2
+
+  .service-phone
+    font-size: 24px
+
 /* Custom, iPhone Retina */
 @media only screen and (max-width: 420px)
   .advantages-box
@@ -390,3 +583,5 @@
     &:first-child, &:last-child
       padding: 0
 
+  h1
+    font-size: 26px

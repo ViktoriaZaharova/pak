@@ -70,7 +70,7 @@ body
   line-height: normal
   font-family: $default-font
   font-weight: normal
-  background: #fff
+  background: #f6f6f6
   color: $text
 
 
@@ -187,6 +187,13 @@ label
 .bg-accent
   background: $text
   color: #fff
+
+h1
+  text-transform: uppercase
+  width: 100%
+  font-weight: 800
+  font-size: 83px
+  line-height: 1
 
 h2
   width: 100%
@@ -306,12 +313,17 @@ header
           width: 60px
           left: 50%
           transform: translate(-50%, 0)
-          bottom: -34px
+          bottom: -36px
           z-index: 1
 
         &:hover
           &:before
             background: $accent
+      .active
+        color: #ff2a1e
+        font-weight: 600
+        &:before
+          background: $accent
 
 .header-top
   .list-social
@@ -679,7 +691,6 @@ header
     text-transform: uppercase
     font-weight: 800
     font-size: 31.5px
-    color: $accent
     max-width: 330px
 
   .btn
@@ -707,13 +718,16 @@ header
 .clients-box
   border: solid 1px #363636
     right: none
-  padding: 10px
+  padding: 20px 10px
   height: 194px
   width: 100%
   display: flex
   align-items: center
   justify-content: center
-
+  filter: grayscale(100%)
+  transition: .3s ease
+  &:hover
+    filter: none
   img
     max-height: 100%
 
@@ -882,6 +896,8 @@ footer
     a
 
       color: #fff
+      position: relative
+
 
       img
         width: 100%
@@ -889,7 +905,8 @@ footer
       &:hover
         color: $accent
         font-weight: 600
-
+    .active
+      color: $accent
 
 .list-social
   display: flex
@@ -969,6 +986,233 @@ footer
       font-size: 16px
       height: 50px
       margin: 20px 0 0
+
+//pages
+.page-home-section
+  color: #fff
+  position: relative
+  padding: 89px 0 218px
+  .box-text
+    font-size: 25px
+    line-height: 1.12
+    max-width: 520px
+    width: 100%
+    margin: 0 0 0 30px
+  h1
+    margin: 0 0 143px
+
+.home-services
+  background: url("../img/service-bg.jpg") no-repeat center
+    size: cover
+
+//breadcrumb-section
+.breadcrumb-section
+  padding: 28px 0 25px
+
+.breadcrumb
+  width: 100%
+  background: transparent
+  padding: 0
+  margin: 0
+  font-size: 20px
+  font-weight: normal
+  border: none
+    radius: 0
+  .breadcrumb-item
+    margin: 0
+    a
+      color: #787878
+
+.breadcrumb-item.active
+  color: #fff
+  font-weight: 600
+
+.advantages-services
+  padding: 94px 0 109px
+  background: $text
+  color: #fff
+
+.advantages-services-box
+  font-size: 19px
+  &__icon
+    margin: 0 auto 28px
+    display: flex
+    align-items: center
+    justify-content: center
+    height: 130px
+    img
+      max-height: 100%
+  &__body
+    width: 100%
+    padding: 32px 0 0
+    position: relative
+    &:before
+      content: ''
+      position: absolute
+      top: 0
+      left: 50%
+      transform: translate(-50%,0)
+      background: $accent
+      height: 3px
+      width: 215px
+
+//.service section
+.services-section
+  padding: 17px 0 62px
+  h2
+    text-align: center
+    margin: 0 auto 80px
+
+.services-section__img
+  margin: 0 0 78px
+  height: 310px
+  width: 100%
+  display: flex
+  align-items: center
+  justify-content: center
+  overflow: hidden
+  img
+    width: 100%
+    height: 100%
+    object-fit: cover
+
+
+.list-dots
+
+  column-count: 2
+  font-size: 25px
+  padding: 0 150px
+  li
+    margin: 0 0 38px
+    padding: 0 0 0 31px
+    position: relative
+    &:before
+      content: ''
+      position: absolute
+      width: 9px
+      height: 9px
+      left: 0
+      top: 12px
+      border-radius: 50%
+      background: $accent
+    &:last-child
+      margin: 0
+
+.about-two
+  padding: 68px 0 55px
+  .advantages-list
+    margin: 0
+  .box-text
+    font-size: 23px
+    margin: 25px 0 0
+  .advantages-box
+    margin: 0
+
+.advantages-box__icon
+  display: flex
+  align-items: center
+  height: 82px
+  img
+    max-height: 100%
+    max-width: none
+
+//services-callback
+.services-callback
+  padding: 85px 0 0
+
+
+.services-callback-wrapper
+  width: 100%
+  background: #fff
+  padding: 73px 44px 65px
+  display: flex
+  align-items: flex-start
+  flex-wrap: wrap
+  margin: 0 auto 66px
+  h3
+    max-width: 710px
+    width: 100%
+    font-size: 42.5px
+
+.services-callback-box
+  width: calc(100% - 763px)
+  margin: 0 0 0 auto
+  h4
+    color: #363636
+    font-size: 25px
+    margin: 0 0 35px
+    max-width: 557px
+    width: 100%
+
+  .form-callback
+    width: 100%
+    display: flex
+    label, button
+      max-width: 260px
+    label
+      margin: 0 12px 0 0
+    button
+      margin: 0 0 0 auto
+      height: 46px
+      font-size: 16px
+      line-height: normal
+
+.service-phone
+  background: $accent
+  color: #fff
+  display: flex
+  align-items: center
+  justify-content: center
+  padding: 57px 0 66px
+  font-size: 83px
+  font-weight: 800
+  &:hover
+    color: #fff
+
+.phone-service
+  text-align: center
+  padding: 0 0 17px
+
+.phone-service__icon
+  margin: 0 auto 22px
+  display: flex
+  align-items: center
+  justify-content: center
+
+//home-manufacturers
+.home-manufacturers
+  background: url("../img/manufacture-bg.jpg") no-repeat center
+    size: cover
+  .box-text
+    max-width: 680px
+
+.manufacturers-section
+  padding: 140px 0 100px
+
+.manufacturers-box
+  background: #fff
+  margin: 0 0 37px
+  width: 100%
+  height: 88px
+  display: flex
+  align-items: center
+  justify-content: space-between
+  border: solid 1px #363636
+  padding: 12px 26px
+  color: #787878
+  font-size: 23px
+  font-weight: 800
+  text-transform: uppercase
+  &:hover
+    box-shadow: 0 0 10px rgba(#363636, .7)
+  &__arrow
+    max-width: 31px
+    width: 100%
+    display: flex
+    align-items: center
+
+
+
 
 @import "media"
 // Всегда в конце
