@@ -704,6 +704,20 @@ header .menu li .active {
   .advantages-box p {
     min-height: 68px; }
 
+.official-mark .advantages-services-box {
+  max-width: 520px;
+  margin: 0 auto; }
+
+.official-mark .advantages-services-box__icon {
+  margin: 0 auto 16px;
+  height: 110px; }
+  .official-mark .advantages-services-box__icon img {
+    max-height: 100%;
+    max-width: none; }
+
+.official-mark .advantages-services-box__body:before {
+  width: 100%; }
+
 .official-box {
   width: 100%;
   border: solid 2px #ff2a1e;
@@ -1112,9 +1126,7 @@ footer {
   font-weight: 600; }
 
 .advantages-services {
-  padding: 94px 0 109px;
-  background: #363636;
-  color: #fff; }
+  padding: 94px 0 109px; }
 
 .advantages-services-box {
   font-size: 19px; }
@@ -1131,6 +1143,7 @@ footer {
             justify-content: center;
     height: 130px; }
     .advantages-services-box__icon img {
+      max-width: none;
       max-height: 100%; }
   .advantages-services-box__body {
     width: 100%;
@@ -1227,25 +1240,24 @@ footer {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: start;
-      -ms-flex-align: start;
-          align-items: flex-start;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
   margin: 0 auto 66px; }
   .services-callback-wrapper h3 {
-    max-width: 710px;
-    width: 100%;
+    width: 47%;
     font-size: 42.5px; }
 
 .services-callback-box {
-  width: calc(100% - 763px);
+  width: 53%;
   margin: 0 0 0 auto; }
   .services-callback-box h4 {
     color: #363636;
     font-size: 25px;
     margin: 0 0 35px;
-    max-width: 557px;
+    max-width: 577px;
     width: 100%; }
   .services-callback-box .form-callback {
     width: 100%;
@@ -1301,6 +1313,8 @@ footer {
     background-size: cover; }
   .home-manufacturers .box-text {
     max-width: 680px; }
+  .home-manufacturers h1 {
+    margin: 0 0 120px; }
 
 .manufacturers-section {
   padding: 140px 0 100px; }
@@ -1337,6 +1351,629 @@ footer {
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center; }
+
+.home-about {
+  background: url("../img/about-bg.jpg") no-repeat center;
+    background-size: cover; }
+  .home-about .box-text {
+    max-width: 760px;
+    margin: 0; }
+  .home-about h1 {
+    margin: 0 0 192px; }
+
+.official-mark {
+  padding: 117px 0 100px; }
+  .official-mark h2 {
+    margin: 0 0 53px;
+    text-transform: none;
+    font-size: 46px; }
+
+.marks-wrapper {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: stretch;
+      -ms-flex-align: stretch;
+          align-items: stretch;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  margin: 0 0 70px; }
+
+.mark-box {
+  border: solid 1px #575757;
+  background-color: #fff;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  text-align: center;
+  height: 135px;
+  width: 20%;
+  color: #787878;
+  font-size: 39px;
+  font-weight: 800;
+  text-transform: uppercase; }
+
+.advantages-services-two {
+  padding: 112px 0 20px; }
+  .advantages-services-two h3 {
+    margin: 50px auto 40px;
+    text-align: center;
+    max-width: 1077px;
+    font-size: 46px; }
+
+.advantages-services-wrapper {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: stretch;
+      -ms-flex-align: stretch;
+          align-items: stretch;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap; }
+  .advantages-services-wrapper .advantages-services-box {
+    width: 33.3%;
+    border: solid 1px #575757;
+    padding: 55px 50px;
+    margin: 0 -1px 50px 0; }
+  .advantages-services-wrapper .advantages-services-box__body:before {
+    width: calc(100% - 40px);
+    background: #363636;
+    height: 3px; }
+
+.slogan {
+  width: 100%;
+  background: #cf190e;
+  position: relative;
+  text-align: center;
+  color: #fff;
+  font-size: 64px;
+  font-weight: 800;
+  padding: 55px 0;
+  overflow: hidden; }
+  .slogan:before {
+    content: '';
+    position: absolute;
+    background: #f2f2f2;
+    width: 70px;
+    height: 70px;
+    left: -35px;
+    top: -35px;
+    -webkit-transform: rotate(45deg);
+            transform: rotate(45deg); }
+  .slogan:after {
+    content: '';
+    position: absolute;
+    bottom: -35px;
+    right: -35px;
+    background: #f2f2f2;
+    -webkit-transform: rotate(45deg);
+            transform: rotate(45deg);
+    width: 70px;
+    height: 70px; }
+
+.about-three {
+  border-bottom: solid 1px #949494;
+  padding: 100px 0; }
+
+.home-spare {
+  background: url("../img/spare-bg.jpg") no-repeat center;
+    background-size: cover; }
+  .home-spare h1 {
+    margin: 0 0 132px; }
+  .home-spare .box-text {
+    max-width: 680px; }
+
+.spare-documents {
+  padding: 45px 0 58px; }
+
+.links-document {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  width: 100%;
+  height: 87px;
+  background: #fff;
+  margin: 20px 0;
+  border: solid 1px #575757;
+  text-transform: uppercase;
+  padding: 10px 32px;
+  color: #363636;
+  font-size: 21px;
+  font-weight: 800; }
+  .links-document__icon {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    width: 34px;
+    min-width: 34px; }
+  .links-document small {
+    display: block;
+    text-transform: none;
+    font-size: 19px;
+    font-weight: normal; }
+  .links-document:hover {
+    background: #ff2a1e;
+    color: #fff;
+    border-color: #ff2a1e; }
+    .links-document:hover .links-document__icon {
+      -webkit-filter: brightness(0) invert(1);
+              filter: brightness(0) invert(1); }
+
+.spare-documents__img {
+  max-width: 656px;
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center; }
+
+.spare-section {
+  padding: 0 0 98px; }
+  .spare-section .services-callback-wrapper {
+    margin: 0;
+    padding: 59px 44px 65px 100px; }
+
+.home-repair {
+  background: url("../img/repair-bg.jpg") no-repeat center;
+    background-size: cover; }
+  .home-repair .box-text {
+    font-size: 46px;
+    font-weight: bold;
+    max-width: 790px; }
+  .home-repair h1 {
+    margin: 0 0 147px; }
+
+.advantages-repair {
+  padding: 0; }
+  .advantages-repair .advantages-services-box {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    font-size: 25px;
+    margin: 25px 0 57px; }
+    .advantages-repair .advantages-services-box:last-child {
+      margin: 0 0 25px; }
+  .advantages-repair .advantages-services-box__icon {
+    width: 160px;
+    padding: 0 44px 0 0;
+    height: 121px;
+    margin: 0; }
+  .advantages-repair .advantages-services-box__body {
+    width: calc(100% - 160px);
+    padding: 10px 0 10px 39px;
+    min-height: 168px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center; }
+    .advantages-repair .advantages-services-box__body:before {
+      left: 0;
+      -webkit-transform: translate(0, -50%);
+              transform: translate(0, -50%);
+      top: 50%;
+      width: 3px;
+      height: 100%; }
+
+.advantages-repair__content {
+  padding: 83px 0 77px 130px;
+  position: relative;
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  z-index: 1; }
+  .advantages-repair__content:before {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 2000px;
+    height: 100%;
+    background: #ff2a1e;
+    z-index: -1; }
+
+.advantages-repair-two {
+  padding: 104px 0 111px; }
+  .advantages-repair-two .advantages-services-box__body:before {
+    background: #ff2a1e;
+    width: 165px; }
+  .advantages-repair-two .advantages-services-box {
+    padding: 50px 98px 43px 108px;
+    font-size: 25px; }
+
+.special-offer h2 {
+  color: #ff2a1e;
+  margin: 0 auto 25px; }
+
+.special-offer-wrapper {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: stretch;
+      -ms-flex-align: stretch;
+          align-items: stretch;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap; }
+
+.special-offer-box {
+  width: 50%;
+  padding: 0 99px;
+  text-align: center;
+  border-right: solid 2px #949494;
+  margin: 0 0 36px; }
+  .special-offer-box:last-child {
+    border: none; }
+  .special-offer-box h4 {
+    color: #ccc;
+    font-size: 98.4px;
+    font-weight: bold; }
+  .special-offer-box h3 {
+    max-width: 550px;
+    margin: 0 auto; }
+
+.warranty {
+  position: relative; }
+
+.warranty-img {
+  min-width: 729px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin: -40px 0; }
+
+.warranty-content {
+  padding: 73px 0 79px; }
+  .warranty-content h3 {
+    font-weight: normal;
+    text-align: right;
+    margin: 0 0 50px; }
+  .warranty-content strong {
+    font-weight: bold;
+    display: block; }
+  .warranty-content .btn {
+    font-size: 42px;
+    height: 128px;
+    max-width: 793px;
+    margin: 0 0 0 auto; }
+
+.why-are {
+  padding: 134px 0 100px; }
+  .why-are h2 {
+    margin: 0 auto 78px; }
+
+.why-are-box {
+  width: 100%;
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: stretch;
+      -ms-flex-align: stretch;
+          align-items: stretch; }
+  .why-are-box__img {
+    width: 355px;
+    overflow: hidden;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    position: relative;
+    z-index: 2; }
+    .why-are-box__img img {
+      width: 100%;
+      height: 100%;
+      -o-object-fit: cover;
+         object-fit: cover; }
+  .why-are-box__content {
+    width: calc(100% - 355px);
+    position: relative;
+    background: #ccc;
+    z-index: 1;
+    padding: 50px 46px 20px 33px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    color: #000; }
+  .why-are-box .box-text {
+    font-size: 28px;
+    line-height: 1.25;
+    font-weight: bold; }
+  .why-are-box .number {
+    position: absolute;
+    left: -10px;
+    top: 0;
+    color: #f2f2f2;
+    font-size: 246px;
+    font-weight: bold;
+    line-height: 0.7;
+    z-index: -1; }
+
+.submit-application {
+  padding: 124px 0 102px;
+  border-bottom: solid 1px #949494; }
+  .submit-application .btn {
+    height: 128px;
+    font-size: 42px; }
+
+.mb-36 {
+  margin-bottom: 36px; }
+
+.home-contacts {
+  background: url("../img/contacts-bg.jpg") no-repeat center;
+    background-size: cover; }
+  .home-contacts .box-text {
+    max-width: 700px; }
+  .home-contacts h1 {
+    margin: 0 0 117px; }
+
+.mb-40 {
+  margin-bottom: 40px; }
+
+.mt-130 {
+  margin-top: 130px; }
+
+.mb-64 {
+  margin-bottom: 64px; }
+
+.command {
+  padding: 108px 0 47px; }
+  .command h4 {
+    width: 100%;
+    margin: 0 0 26px;
+    font-size: 32.6px; }
+
+.name-director {
+  font-size: 43px; }
+
+.contacts-links {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: stretch;
+      -ms-flex-align: stretch;
+          align-items: stretch;
+  color: #363636;
+  font-size: 32px;
+  min-height: 48px; }
+  .contacts-links:hover {
+    color: #ff2a1e; }
+  .contacts-links__icon {
+    margin: 0 19px 0 0;
+    padding: 0 28px 0 0;
+    max-width: 70px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    border-right: solid 1px #575757; }
+  .contacts-links__text {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center; }
+
+.command-box {
+  width: 100%;
+  height: 100%;
+  background: #fff;
+  border: solid 1px #575757; }
+  .command-box__photo {
+    width: 100%;
+    height: 383px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    overflow: hidden;
+    background: #919191; }
+    .command-box__photo img {
+      width: 100%;
+      height: 100%;
+      -o-object-fit: cover;
+         object-fit: cover; }
+  .command-box__body {
+    width: 100%;
+    padding: 34px 32px 47px 46px; }
+
+.position {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin: 0 0 14px;
+  font-size: 14px;
+  color: #363636;
+  min-height: 35px; }
+
+.name-employee {
+  margin: 0 0 26px;
+  font-weight: 600;
+  font-size: 20.5px; }
+
+.list-contacts {
+  width: 100%; }
+  .list-contacts li {
+    width: 100%;
+    margin: 0 0 23px; }
+    .list-contacts li:last-child {
+      margin: 0; }
+  .list-contacts__icon {
+    padding: 0 0 8px 8px;
+    max-width: 30px;
+    width: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center; }
+  .list-contacts__text {
+    width: 100%;
+    border-top: 1px solid #575757;
+    padding: 12px 0 0 8px; }
+
+.tel {
+  color: #363636;
+  font-size: 20px;
+  line-height: 1.3; }
+  .tel:hover {
+    color: #ff2a1e; }
+
+.contacts-page {
+  padding: 144px 0 100px; }
+  .contacts-page h2 {
+    margin: 0 0 90px; }
+  .contacts-page .contacts-links {
+    color: #fff;
+    font-size: 51px;
+    margin: 0 75px 0 0; }
+    .contacts-page .contacts-links:last-child {
+      margin: 0; }
+  .contacts-page .contacts-links__icon {
+    padding: 0 19px 0 0;
+    max-width: 101px;
+    margin: 0 30px 0 0; }
+  .contacts-page .btn-call {
+    height: 83px;
+    font-size: 27px;
+    padding: 0 30px;
+    margin: 0 0 0 auto; }
+    .contacts-page .btn-call .btn-icon {
+      width: 41px; }
+
+.contacts-item {
+  width: 100%;
+  border: solid 1px #f6f6f6;
+  height: 100%;
+  padding: 44px 39px 77px; }
+  .contacts-item__head {
+    width: 100%;
+    border-bottom: solid 1px #f6f6f6;
+    padding: 0 8px 22px;
+    font-size: 27.2px;
+    min-height: 88px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center; }
+  .contacts-item .tel {
+    font-size: 32px;
+    font-weight: bold;
+    color: #fff; }
+  .contacts-item__body {
+    width: 100%;
+    padding: 28px 0 0; }
+
+.callback-box-wrap {
+  margin: 85px 0 0;
+  width: 100%; }
+  .callback-box-wrap h4 {
+    font-size: 27.2px;
+    margin: 0 0 34px; }
+  .callback-box-wrap .callback-box {
+    max-width: none;
+    margin: 0;
+    padding: 59px 39px 31px; }
+  .callback-box-wrap form input {
+    height: 60px; }
+  .callback-box-wrap form button {
+    height: 74px;
+    font-size: 23.5px; }
+  .callback-box-wrap form textarea {
+    height: 137px; }
+  .callback-box-wrap form .checkbox {
+    font-size: 12px; }
+  .callback-box-wrap form .checkbox-custom {
+    width: 27px;
+    height: 27px;
+    min-width: 27px; }
+
+.btn-requisites {
+  margin: 15px 0 0;
+  height: 66px;
+  width: 100%;
+  max-width: 337px;
+  font-size: 27px;
+  padding: 0 30px; }
+  .btn-requisites .btn-icon {
+    width: 20px;
+    -webkit-filter: brightness(0) invert(1);
+            filter: brightness(0) invert(1); }
+
+.map {
+  width: 100%;
+  height: 546px;
+  margin: 85px 0 0; }
 
 /*==========  Desktop First  ==========*/
 /* Large Devices, Wide Screens */
@@ -1403,20 +2040,56 @@ footer {
   .about {
     padding: 40px 0; }
   .services-callback-wrapper h3 {
-    width: 55%;
     max-width: none; }
-  .services-callback-box {
-    width: 45%; }
-    .services-callback-box .form-callback {
-      -webkit-box-pack: justify;
-          -ms-flex-pack: justify;
-              justify-content: space-between; }
-      .services-callback-box .form-callback label {
-        width: 31%;
-        margin: 0; }
-      .services-callback-box .form-callback button {
-        width: 31%;
-        margin: 0; } }
+  .services-callback-box .form-callback {
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between; }
+    .services-callback-box .form-callback label {
+      width: 31%;
+      margin: 0; }
+    .services-callback-box .form-callback button {
+      width: 31%;
+      margin: 0; }
+  .spare-section .services-callback-wrapper {
+    padding: 40px; }
+  .special-offer-box h4 {
+    font-size: 60px; }
+  .warranty-content .btn, .submit-application .btn {
+    font-size: 24px;
+    height: 80px;
+    max-width: 600px; }
+  .why-are-box .box-text {
+    font-size: 22px; }
+  .why-are-box__content {
+    padding: 40px 20px 20px; }
+  .submit-application {
+    padding: 70px 0; }
+  .contacts-links {
+    font-size: 24px; }
+  .name-director {
+    font-size: 30px; }
+  .mt-130 {
+    margin-top: 80px; }
+  .command {
+    padding: 80px 0 40px; }
+  .contacts-page .contacts-links {
+    font-size: 35px;
+    margin: 0 30px 0 0; }
+  .contacts-page .contacts-links__icon {
+    max-width: 70px; }
+  .contacts-page .btn-call {
+    height: 60px;
+    font-size: 22px; }
+    .contacts-page .btn-call .btn-icon {
+      width: 30px; }
+  .contacts-item {
+    padding: 30px; }
+    .contacts-item .tel {
+      font-size: 24px; }
+    .contacts-item__head {
+      font-size: 20px;
+      min-height: 76px; } }
 
 @media only screen and (max-width: 1400px) {
   header .footer-box:first-child {
@@ -1472,7 +2145,57 @@ footer {
     font-size: 50px;
     padding: 30px 0; }
   .services-callback {
-    padding: 50px 0 0; } }
+    padding: 50px 0 0; }
+  .spare-section .services-callback-wrapper {
+    padding: 30px; }
+  .links-document {
+    padding: 10px;
+    font-size: 18px;
+    height: 80px; }
+    .links-document small {
+      font-size: 14px; }
+  .links-document__icon {
+    width: 28px;
+    min-width: 28px; }
+  .advantages-repair .advantages-services-box {
+    font-size: 20px; }
+  .advantages-repair__content {
+    padding: 30px 0 30px 50px; }
+  .warranty-img {
+    min-width: 700px; }
+  .why-are-box__img {
+    width: 250px; }
+  .why-are-box__content {
+    width: calc(100% - 250px); }
+  .why-are-box .number {
+    font-size: 150px; }
+  .command-box__body {
+    padding: 20px; }
+  .command-box__photo {
+    height: 270px; }
+  .command h4 {
+    font-size: 26px;
+    margin: 0 0 20px; }
+  .callback-box-wrap form button {
+    font-size: 18px;
+    height: 60px; }
+  .callback-box-wrap .callback-box {
+    padding: 30px; }
+  .callback-box-wrap form input {
+    height: 50px; }
+  .callback-box-wrap form textarea {
+    height: 117px; }
+  .map {
+    margin: 50px 0 0;
+    height: 457px; }
+  .callback-box-wrap {
+    margin: 50px 0 0; }
+  .btn-requisites {
+    height: 50px; }
+  .contacts-page {
+    padding: 80px 0; }
+    .contacts-page h2 {
+      margin: 0 0 40px; } }
 
 @media only screen and (max-width: 1200px) {
   .header-top {
@@ -1528,15 +2251,75 @@ footer {
     height: 280px; }
   .services-section h2 {
     margin: 0 auto 40px; }
-  .services-callback-wrapper h3 {
-    max-width: 600px; }
   .service-phone {
     font-size: 60px; }
   .services-callback-wrapper h3 {
     font-size: 28px; }
   .services-callback-box h4 {
     font-size: 20px;
-    margin: 0 0 15px; } }
+    margin: 0 0 15px; }
+    .services-callback-box h4 br {
+      display: none; }
+  .advantages-services-two {
+    padding: 50px 0 0; }
+  .links-document {
+    margin: 15px 0;
+    font-size: 16px; }
+  .advantages-repair-two .advantages-services-box {
+    padding: 30px;
+    font-size: 22px; }
+  .special-offer-box {
+    padding: 0 10px; }
+  .warranty-img {
+    min-width: 550px; }
+  .warranty-content .btn, .submit-application .btn {
+    font-size: 18px;
+    height: auto;
+    max-width: 400px; }
+  .warranty-content h3 {
+    margin: 0 0 30px; }
+  .why-are-box .box-text {
+    font-size: 15px; }
+  .why-are-box .number {
+    font-size: 100px;
+    left: 0; }
+  .why-are {
+    padding: 70px 0; }
+    .why-are h2 {
+      margin: 0 auto 40px; }
+  .contacts-links {
+    font-size: 18px;
+    min-height: auto; }
+  .contacts-links__icon {
+    max-width: 40px;
+    padding: 0 10px 0 0;
+    margin: 0 10px 0 0; }
+  .command {
+    padding: 50px 0 40px; }
+    .command h4 {
+      font-size: 20px; }
+  .mt-130 {
+    margin-top: 40px; }
+  .tel {
+    font-size: 16px; }
+  .name-employee {
+    font-size: 18px;
+    margin: 0 0 15px; }
+  .contacts-item {
+    padding: 20px; }
+    .contacts-item .tel {
+      font-size: 18px; }
+  .contacts-page .contacts-links {
+    font-size: 24px; }
+  .contacts-page .contacts-links__icon {
+    max-width: 50px;
+    padding: 0 10px 0 0;
+    margin: 0 15px 0 0; }
+  .contacts-page .btn-call {
+    font-size: 18px; }
+  .callback-box-wrap h4 {
+    font-size: 22px;
+    margin: 0 0 25px; } }
 
 /* Medium Devices, Desktops */
 @media only screen and (max-width: 992px) {
@@ -1638,9 +2421,93 @@ footer {
     max-width: none;
     margin: 0 0 20px; }
     .services-callback-wrapper h3 br {
-      display: none; } }
+      display: none; }
+  .official-mark {
+    padding: 50px 0; }
+    .official-mark h2 {
+      margin: 0 0 30px;
+      font-size: 36px; }
+  .mark-box {
+    font-size: 24px;
+    width: 25%; }
+  .advantages-services-two h3 {
+    font-size: 30px;
+    margin: 30px 0; }
+  .slogan {
+    font-size: 40px;
+    padding: 30px 20px; }
+  .spare-documents__img {
+    margin: 30px auto 0;
+    max-width: 500px; }
+  .advantages-repair__content {
+    padding: 30px; }
+    .advantages-repair__content:before {
+      left: -20px; }
+  .advantages-repair {
+    padding: 30px 0 0; }
+  .advantages-repair .advantages-services-box__icon {
+    padding: 0;
+    width: 100%;
+    margin: 0 auto 20px;
+    height: 70px; }
+    .advantages-repair .advantages-services-box__icon img {
+      max-height: 100%; }
+  .advantages-repair .advantages-services-box {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    margin: 0 0 30px; }
+  .advantages-repair .advantages-services-box__body {
+    width: 100%;
+    padding: 20px 0 0;
+    min-height: auto; }
+    .advantages-repair .advantages-services-box__body br {
+      display: none; }
+    .advantages-repair .advantages-services-box__body:before {
+      left: 50%;
+      -webkit-transform: translate(-50%, 0);
+              transform: translate(-50%, 0);
+      width: 100%;
+      height: 2px;
+      top: 0; }
+  .special-offer-box h4 {
+    font-size: 40px; }
+  .warranty-img {
+    min-width: auto;
+    max-width: 400px;
+    margin: -20px auto 30px; }
+  .warranty-content {
+    padding: 0 0 40px;
+    text-align: center; }
+    .warranty-content h3 {
+      text-align: center; }
+    .warranty-content .btn {
+      margin: 0 auto;
+      font-size: 16px; }
+  .contacts-links {
+    margin: 20px 0 0; }
+  .name-director {
+    font-size: 24px; }
+  .position {
+    min-height: auto; } }
 
 /* Small Devices, Tablets */
+@media only screen and (max-width: 890px) {
+  .contacts-page .contacts-links {
+    width: 100%;
+    margin: 0 auto 20px;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center; }
+  .contacts-page .btn-call {
+    margin: auto; }
+  .contacts-page h2 {
+    text-align: center; } }
+
 @media only screen and (max-width: 768px) {
   .slide-title {
     font-size: 50px; }
@@ -1675,7 +2542,30 @@ footer {
   .services-callback-box .form-callback button {
     font-size: 14px; }
   .manufacturers-section {
-    padding: 50px 0 30px; } }
+    padding: 50px 0 30px; }
+  .mark-box {
+    width: 33.3%; }
+  .advantages-services-wrapper .advantages-services-box {
+    padding: 30px 20px; }
+  .spare-section {
+    padding: 0 0 50px; }
+  .advantages-repair-two .advantages-services-box {
+    width: 100%;
+    font-size: 18px;
+    text-align: center; }
+    .advantages-repair-two .advantages-services-box br {
+      display: none; }
+  .submit-application {
+    padding: 40px 0; }
+    .submit-application h3 {
+      text-align: center;
+      margin: 0 auto; }
+    .submit-application .btn {
+      margin: 30px auto 0; }
+  .callback-box-wrap {
+    margin: 30px 0 0; }
+  .map {
+    margin: 30px 0 0; } }
 
 /* Extra Small Devices, Phones */
 @media only screen and (max-width: 576px) {
@@ -1742,12 +2632,41 @@ footer {
   h1 {
     font-size: 30px; }
   .page-home-section .box-text {
-    font-size: 18px; }
+    font-size: 16px; }
   .manufacturers-box {
     height: 70px;
     padding: 14px 20px;
     font-size: 20px;
-    margin: 0 0 25px; } }
+    margin: 0 0 25px; }
+  .advantages-services-wrapper .advantages-services-box {
+    width: 100%; }
+  .mark-box {
+    width: 50%;
+    height: 110px;
+    padding: 10px; }
+  .official-mark h2 {
+    text-align: center;
+    font-size: 26px; }
+  .advantages-services-two h3 {
+    font-size: 24px; }
+  .slogan {
+    font-size: 30px; }
+  .official-mark .advantages-services-box {
+    margin: 0 auto 30px; }
+  .official-mark .advantages-services-box__icon {
+    height: 90px; }
+  .links-document {
+    margin: 0 0 10px; }
+  .special-offer-box {
+    width: 100%;
+    border: none;
+    margin: 0 0 30px; }
+    .special-offer-box h4 {
+      font-size: 30px; }
+  .special-offer h2 {
+    font-size: 24px; }
+  .command-box__photo {
+    height: 400px; } }
 
 @media only screen and (max-width: 480px) {
   .slide-title {
@@ -1779,8 +2698,26 @@ footer {
     .home-slider-item .container {
       position: relative;
       z-index: 2; }
-  .service-phone {
-    font-size: 24px; } }
+  .service-phone, .slogan {
+    font-size: 24px; }
+  .why-are-box {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start; }
+    .why-are-box__img {
+      width: 100%;
+      height: 250px; }
+    .why-are-box__content {
+      width: 100%;
+      padding: 40px 20px; }
+    .why-are-box br {
+      display: none; }
+  .why-are {
+    padding: 70px 0 40px; } }
 
 /* Custom, iPhone Retina */
 @media only screen and (max-width: 420px) {
@@ -1790,4 +2727,6 @@ footer {
     .advantages-box:first-child, .advantages-box:last-child {
       padding: 0; }
   h1 {
-    font-size: 26px; } }
+    font-size: 26px; }
+  .command-box__photo {
+    height: 320px; } }

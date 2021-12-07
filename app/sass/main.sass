@@ -319,9 +319,11 @@ header
         &:hover
           &:before
             background: $accent
+
       .active
         color: #ff2a1e
         font-weight: 600
+
         &:before
           background: $accent
 
@@ -371,12 +373,15 @@ header
   overflow-y: auto
   padding: 30px
   background: $text
+
   .menu
     font-size: 18px
     margin: 20px 0
+
     li
       width: 100%
       margin: 0 0 15px
+
   .phone
     width: fit-content
     margin: 20px 0 0
@@ -389,6 +394,7 @@ header
   position: absolute
   right: 30px
   top: 30px
+
   &:before, &:after
     content: ''
     position: absolute
@@ -397,8 +403,10 @@ header
     width: 2px
     height: 100%
     background: #fff
+
   &:before
     transform: rotate(45deg)
+
   &:after
     transform: rotate(135deg)
 
@@ -662,6 +670,23 @@ header
   p
     min-height: 68px
 
+.official-mark
+  .advantages-services-box
+    max-width: 520px
+    margin: 0 auto
+
+  .advantages-services-box__icon
+    margin: 0 auto 16px
+    height: 110px
+
+    img
+      max-height: 100%
+      max-width: none
+
+  .advantages-services-box__body
+    &:before
+      width: 100%
+
 .official-box
   width: 100%
   border: solid 2px #ff2a1e
@@ -726,8 +751,10 @@ header
   justify-content: center
   filter: grayscale(100%)
   transition: .3s ease
+
   &:hover
     filter: none
+
   img
     max-height: 100%
 
@@ -905,6 +932,7 @@ footer
       &:hover
         color: $accent
         font-weight: 600
+
     .active
       color: $accent
 
@@ -949,6 +977,7 @@ footer
     color: $accent
     font-weight: 600
 
+
 .modal-title
   font-size: 20px
   text-transform: uppercase
@@ -958,6 +987,7 @@ footer
 
 .modal-header
   border: none
+
   .close
     padding: 0
     top: 15px
@@ -967,6 +997,7 @@ footer
     margin: 0
     opacity: 1
     position: absolute
+
     &:before, &:after
       content: ''
       position: absolute
@@ -975,8 +1006,10 @@ footer
       width: 2px
       height: 100%
       background: $text
+
     &:before
       transform: rotate(45deg)
+
     &:after
       transform: rotate(135deg)
 
@@ -992,12 +1025,14 @@ footer
   color: #fff
   position: relative
   padding: 89px 0 218px
+
   .box-text
     font-size: 25px
     line-height: 1.12
     max-width: 520px
     width: 100%
     margin: 0 0 0 30px
+
   h1
     margin: 0 0 143px
 
@@ -1018,8 +1053,10 @@ footer
   font-weight: normal
   border: none
     radius: 0
+
   .breadcrumb-item
     margin: 0
+
     a
       color: #787878
 
@@ -1029,29 +1066,32 @@ footer
 
 .advantages-services
   padding: 94px 0 109px
-  background: $text
-  color: #fff
 
 .advantages-services-box
   font-size: 19px
+
   &__icon
     margin: 0 auto 28px
     display: flex
     align-items: center
     justify-content: center
     height: 130px
+
     img
+      max-width: none
       max-height: 100%
+
   &__body
     width: 100%
     padding: 32px 0 0
     position: relative
+
     &:before
       content: ''
       position: absolute
       top: 0
       left: 50%
-      transform: translate(-50%,0)
+      transform: translate(-50%, 0)
       background: $accent
       height: 3px
       width: 215px
@@ -1059,6 +1099,7 @@ footer
 //.service section
 .services-section
   padding: 17px 0 62px
+
   h2
     text-align: center
     margin: 0 auto 80px
@@ -1071,6 +1112,7 @@ footer
   align-items: center
   justify-content: center
   overflow: hidden
+
   img
     width: 100%
     height: 100%
@@ -1082,10 +1124,12 @@ footer
   column-count: 2
   font-size: 25px
   padding: 0 150px
+
   li
     margin: 0 0 38px
     padding: 0 0 0 31px
     position: relative
+
     &:before
       content: ''
       position: absolute
@@ -1095,16 +1139,20 @@ footer
       top: 12px
       border-radius: 50%
       background: $accent
+
     &:last-child
       margin: 0
 
 .about-two
   padding: 68px 0 55px
+
   .advantages-list
     margin: 0
+
   .box-text
     font-size: 23px
     margin: 25px 0 0
+
   .advantages-box
     margin: 0
 
@@ -1112,6 +1160,7 @@ footer
   display: flex
   align-items: center
   height: 82px
+
   img
     max-height: 100%
     max-width: none
@@ -1126,31 +1175,35 @@ footer
   background: #fff
   padding: 73px 44px 65px
   display: flex
-  align-items: flex-start
+  align-items: center
   flex-wrap: wrap
   margin: 0 auto 66px
+
   h3
-    max-width: 710px
-    width: 100%
+    width: 47%
     font-size: 42.5px
 
 .services-callback-box
-  width: calc(100% - 763px)
+  width: 53%
   margin: 0 0 0 auto
+
   h4
     color: #363636
     font-size: 25px
     margin: 0 0 35px
-    max-width: 557px
+    max-width: 577px
     width: 100%
 
   .form-callback
     width: 100%
     display: flex
+
     label, button
       max-width: 260px
+
     label
       margin: 0 12px 0 0
+
     button
       margin: 0 0 0 auto
       height: 46px
@@ -1166,6 +1219,7 @@ footer
   padding: 57px 0 66px
   font-size: 83px
   font-weight: 800
+
   &:hover
     color: #fff
 
@@ -1183,8 +1237,12 @@ footer
 .home-manufacturers
   background: url("../img/manufacture-bg.jpg") no-repeat center
     size: cover
+
   .box-text
     max-width: 680px
+
+  h1
+    margin: 0 0 120px
 
 .manufacturers-section
   padding: 140px 0 100px
@@ -1203,16 +1261,604 @@ footer
   font-size: 23px
   font-weight: 800
   text-transform: uppercase
+
   &:hover
     box-shadow: 0 0 10px rgba(#363636, .7)
+
   &__arrow
     max-width: 31px
     width: 100%
     display: flex
     align-items: center
 
+//home-about
+.home-about
+  background: url("../img/about-bg.jpg") no-repeat center
+    size: cover
+
+  .box-text
+    max-width: 760px
+    margin: 0
+
+  h1
+    margin: 0 0 192px
+
+.official-mark
+  padding: 117px 0 100px
+
+  h2
+    margin: 0 0 53px
+    text-transform: none
+    font-size: 46px
+
+.marks-wrapper
+  width: 100%
+  display: flex
+  align-items: stretch
+  flex-wrap: wrap
+  margin: 0 0 70px
+
+.mark-box
+  border: solid 1px #575757
+  background-color: #fff
+  display: flex
+  align-items: center
+  justify-content: center
+  text-align: center
+  height: 135px
+  width: 20%
+  color: #787878
+  font-size: 39px
+  font-weight: 800
+  text-transform: uppercase
+
+//advantages-services-two
+.advantages-services-two
+  padding: 112px 0 20px
+
+  h3
+    margin: 50px auto 40px
+    text-align: center
+    max-width: 1077px
+    font-size: 46px
 
 
+.advantages-services-wrapper
+  width: 100%
+  display: flex
+  align-items: stretch
+  flex-wrap: wrap
+
+  .advantages-services-box
+    width: 33.3%
+    border: solid 1px #575757
+    padding: 55px 50px
+    margin: 0 -1px 50px 0
+
+  .advantages-services-box__body
+    &:before
+      width: calc(100% - 40px)
+      background: #363636
+      height: 3px
+
+.slogan
+  width: 100%
+  background: #cf190e
+  position: relative
+  text-align: center
+  color: #fff
+  font-size: 64px
+  font-weight: 800
+  padding: 55px 0
+  overflow: hidden
+
+  &:before
+    content: ''
+    position: absolute
+    background: #f2f2f2
+    width: 70px
+    height: 70px
+    left: -35px
+    top: -35px
+    transform: rotate(45deg)
+
+  &:after
+    content: ''
+    position: absolute
+    bottom: -35px
+    right: -35px
+    background: #f2f2f2
+    transform: rotate(45deg)
+    width: 70px
+    height: 70px
+
+.about-three
+  border-bottom: solid 1px #949494
+  padding: 100px 0
+
+//home-spare
+.home-spare
+  background: url("../img/spare-bg.jpg") no-repeat center
+    size: cover
+
+  h1
+    margin: 0 0 132px
+
+  .box-text
+    max-width: 680px
+
+.spare-documents
+  padding: 45px 0 58px
+
+.links-document
+  display: flex
+  align-items: center
+  justify-content: space-between
+  width: 100%
+  height: 87px
+  background: #fff
+  margin: 20px 0
+  border: solid 1px #575757
+  text-transform: uppercase
+  padding: 10px 32px
+  color: #363636
+  font-size: 21px
+  font-weight: 800
+
+  &__icon
+    display: flex
+    align-items: center
+    justify-content: center
+    width: 34px
+    min-width: 34px
+
+  small
+    display: block
+    text-transform: none
+    font-size: 19px
+    font-weight: normal
+
+  &:hover
+    background: $accent
+    color: #fff
+    border-color: $accent
+
+    .links-document__icon
+      filter: brightness(0) invert(1)
+
+.spare-documents__img
+  max-width: 656px
+  width: 100%
+  display: flex
+  align-items: center
+
+.spare-section
+  padding: 0 0 98px
+
+  .services-callback-wrapper
+    margin: 0
+    padding: 59px 44px 65px 100px
+
+//home-repair
+.home-repair
+  background: url("../img/repair-bg.jpg") no-repeat center
+    size: cover
+
+  .box-text
+    font-size: 46px
+    font-weight: bold
+    max-width: 790px
+
+  h1
+    margin: 0 0 147px
+
+.advantages-repair
+  padding: 0
+
+  .advantages-services-box
+    display: flex
+    align-items: center
+    font-size: 25px
+    margin: 25px 0 57px
+
+    &:last-child
+      margin: 0 0 25px
+
+  .advantages-services-box__icon
+    width: 160px
+    padding: 0 44px 0 0
+    height: 121px
+    margin: 0
+
+  .advantages-services-box__body
+    width: calc(100% - 160px)
+    padding: 10px 0 10px 39px
+    min-height: 168px
+    display: flex
+    align-items: center
+
+    &:before
+      left: 0
+      transform: translate(0, -50%)
+      top: 50%
+      width: 3px
+      height: 100%
+
+.advantages-repair__content
+  padding: 83px 0 77px 130px
+  position: relative
+  height: 100%
+  display: flex
+  align-items: center
+  flex-wrap: wrap
+  z-index: 1
+
+  &:before
+    content: ''
+    position: absolute
+    left: 0
+    top: 0
+    width: 2000px
+    height: 100%
+    background: $accent
+    z-index: -1
+
+//advantages-repair-two
+.advantages-repair-two
+  padding: 104px 0 111px
+
+  .advantages-services-box__body
+    &:before
+      background: $accent
+      width: 165px
+
+  .advantages-services-box
+    padding: 50px 98px 43px 108px
+    font-size: 25px
+
+.special-offer
+  h2
+    color: $accent
+    margin: 0 auto 25px
+
+.special-offer-wrapper
+  width: 100%
+  display: flex
+  align-items: stretch
+  flex-wrap: wrap
+
+.special-offer-box
+  width: 50%
+  padding: 0 99px
+  text-align: center
+  border-right: solid 2px #949494
+  margin: 0 0 36px
+
+  &:last-child
+    border: none
+
+  h4
+    color: #ccc
+    font-size: 98.4px
+    font-weight: bold
+
+  h3
+    max-width: 550px
+    margin: 0 auto
+
+//warranty
+.warranty
+  position: relative
+
+.warranty-img
+  min-width: 729px
+  display: flex
+  align-items: center
+  justify-content: center
+  margin: -40px 0
+
+.warranty-content
+  padding: 73px 0 79px
+
+  h3
+    font-weight: normal
+    text-align: right
+    margin: 0 0 50px
+
+  strong
+    font-weight: bold
+    display: block
+
+  .btn
+    font-size: 42px
+    height: 128px
+    max-width: 793px
+    margin: 0 0 0 auto
+
+.why-are
+  padding: 134px 0 100px
+
+  h2
+    margin: 0 auto 78px
+
+.why-are-box
+  width: 100%
+  height: 100%
+  display: flex
+  align-items: stretch
+
+  &__img
+    width: 355px
+    overflow: hidden
+    display: flex
+    align-items: center
+    justify-content: center
+    position: relative
+    z-index: 2
+
+    img
+      width: 100%
+      height: 100%
+      object-fit: cover
+
+  &__content
+    width: calc(100% - 355px)
+    position: relative
+    background: #ccc
+    z-index: 1
+    padding: 50px 46px 20px 33px
+    display: flex
+    flex-direction: column
+    align-items: flex-start
+    justify-content: center
+    color: #000
+
+  .box-text
+    font-size: 28px
+    line-height: 1.25
+    font-weight: bold
+
+  .number
+    position: absolute
+    left: -10px
+    top: 0
+    color: #f2f2f2
+    font-size: 246px
+    font-weight: bold
+    line-height: 0.7
+    z-index: -1
+
+
+.submit-application
+  padding: 124px 0 102px
+  border-bottom: solid 1px #949494
+
+  .btn
+    height: 128px
+    font-size: 42px
+
+.mb-36
+  margin-bottom: 36px
+
+//home-contacts
+.home-contacts
+  background: url("../img/contacts-bg.jpg") no-repeat center
+    size: cover
+
+  .box-text
+    max-width: 700px
+
+  h1
+    margin: 0 0 117px
+
+
+.mb-40
+  margin-bottom: 40px
+
+.mt-130
+  margin-top: 130px
+
+.mb-64
+  margin-bottom: 64px
+
+.command
+  padding: 108px 0 47px
+
+  h4
+    width: 100%
+    margin: 0 0 26px
+    font-size: 32.6px
+
+.name-director
+  font-size: 43px
+
+.contacts-links
+  display: flex
+  align-items: stretch
+  color: #363636
+  font-size: 32px
+  min-height: 48px
+
+  &:hover
+    color: $accent
+
+  &__icon
+    margin: 0 19px 0 0
+    padding: 0 28px 0 0
+    max-width: 70px
+    display: flex
+    align-items: center
+    justify-content: center
+    border-right: solid 1px #575757
+  &__text
+    display: flex
+    align-items: center
+
+.command-box
+  width: 100%
+  height: 100%
+  background: #fff
+  border: solid 1px #575757
+
+  &__photo
+    width: 100%
+    height: 383px
+    display: flex
+    align-items: center
+    justify-content: center
+    overflow: hidden
+    background: #919191
+
+    img
+      width: 100%
+      height: 100%
+      object-fit: cover
+
+  &__body
+    width: 100%
+    padding: 34px 32px 47px 46px
+
+
+.position
+  display: flex
+  align-items: center
+  margin: 0 0 14px
+  font-size: 14px
+  color: #363636
+  min-height: 35px
+
+.name-employee
+  margin: 0 0 26px
+  font-weight: 600
+  font-size: 20.5px
+
+.list-contacts
+  width: 100%
+
+  li
+    width: 100%
+    margin: 0 0 23px
+
+    &:last-child
+      margin: 0
+
+  &__icon
+    padding: 0 0 8px 8px
+    max-width: 30px
+    width: 100%
+    display: flex
+    align-items: center
+
+  &__text
+    width: 100%
+    border-top: 1px solid #575757
+    padding: 12px 0 0 8px
+
+.tel
+  color: #363636
+  font-size: 20px
+  line-height: 1.3
+
+  &:hover
+    color: $accent
+
+//contacts-page
+.contacts-page
+  padding: 144px 0 100px
+
+  h2
+    margin: 0 0 90px
+
+  .contacts-links
+    color: #fff
+    font-size: 51px
+    margin: 0 75px 0 0
+
+    &:last-child
+      margin: 0
+
+  .contacts-links__icon
+    padding: 0 19px 0 0
+    max-width: 101px
+    margin: 0 30px 0 0
+
+  .btn-call
+    height: 83px
+    font-size: 27px
+    padding: 0 30px
+    margin: 0 0 0 auto
+
+    .btn-icon
+      width: 41px
+
+.contacts-item
+  width: 100%
+  border: solid 1px #f6f6f6
+  height: 100%
+  padding: 44px 39px 77px
+
+  &__head
+    width: 100%
+    border-bottom: solid 1px #f6f6f6
+    padding: 0 8px 22px
+    font-size: 27.2px
+    min-height: 88px
+    display: flex
+    align-items: center
+
+  .tel
+    font-size: 32px
+    font-weight: bold
+    color: #fff
+
+  &__body
+    width: 100%
+    padding: 28px 0 0
+
+.callback-box-wrap
+  margin: 85px 0 0
+  width: 100%
+
+  h4
+    font-size: 27.2px
+    margin: 0 0 34px
+
+  .callback-box
+    max-width: none
+    margin: 0
+    padding: 59px 39px 31px
+  form
+    input
+      height: 60px
+    button
+      height: 74px
+      font-size: 23.5px
+    textarea
+      height: 137px
+    .checkbox
+      font-size: 12px
+    .checkbox-custom
+      width: 27px
+      height: 27px
+      min-width: 27px
+
+
+.btn-requisites
+  margin: 15px 0 0
+  height: 66px
+  width: 100%
+  max-width: 337px
+  font-size: 27px
+  padding: 0 30px
+
+  .btn-icon
+    width: 20px
+    filter: brightness(0) invert(1)
+
+.map
+  width: 100%
+  height: 546px
+  margin: 85px 0 0
 
 @import "media"
 // Всегда в конце
