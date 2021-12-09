@@ -60,3 +60,35 @@ $('.menu li a').each(function () {
     }
 });
 // end
+
+$('.btn-filter').on('click', function () {
+   $('.sidebar').fadeToggle();
+});
+
+$('.sidebar-close').on('click', function () {
+    $('.sidebar').fadeOut();
+});
+
+
+$(document).ready(function() {
+
+    $('.slider-range').slider({
+        range: true,
+        min: 0,
+        max: 300,
+        values: [6, 266],
+        classes: {
+            "ui-slider-handle": "ui-corner-all"
+        },
+        slide: function (event, ui) {
+            //Поле минимального значения
+            $(".dec1").val(ui.values[0]);
+            //Поле максимального значения
+            $(".dec2").val(ui.values[1]);
+        }
+    });
+
+    $(".dec1").val($(".slider-range").slider("values", 0));
+    $(".dec2").val($(".slider-range").slider("values", 1));
+
+});

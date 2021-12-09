@@ -1060,6 +1060,10 @@ footer
     a
       color: #787878
 
+.breadcrumb-item
+  display: flex
+  align-items: center
+
 .breadcrumb-item.active
   color: #fff
   font-weight: 600
@@ -1859,6 +1863,418 @@ footer
   width: 100%
   height: 546px
   margin: 85px 0 0
+
+//technique
+.technique
+  padding: 73px 0 57px
+
+.technique-card
+  width: 100%
+  height: 100%
+  border: 1px solid transparent
+  transition: .3s ease
+  background: #fff
+  padding: 38px 38px 54px
+  box-shadow: 8px 8.9px 27px 0 rgba(4, 4, 4, 0.12)
+  &:hover
+    border-color: $text
+  &__img
+    width: 100%
+    height: 300px
+    padding: 0 0 15px
+    display: flex
+    align-items: center
+    justify-content: center
+    border-bottom: solid 1px #363636
+    img
+      max-height: 100%
+  &__body
+    width: 100%
+    height: calc(100% - 300px)
+    padding: 23px 0 0
+    display: flex
+    flex-direction: column
+  .btn
+    margin: auto 0 0 auto
+  h3
+    margin: 0 0 24px
+    min-height: 80px
+    display: flex
+    align-items: center
+    font-size: 42.6px
+    line-height: 0.96
+  .box-text
+    color: #b3b3b3
+    font-size: 15.5px
+    margin: 0 0 36px
+
+.btn-border-grey
+  height: 42px
+  max-width: 198px
+  width: 100%
+  border-color: $text
+  color: $text
+  font-weight: bold
+  font-size: 12.5px
+  &:hover
+    box-shadow: 8px 8.9px 16px 0 rgba(3, 4, 2, 0.26)
+    border-color: $accent
+    .btn-icon
+      filter: brightness(0) invert(1)
+
+.mb-32
+  margin-bottom: 32px
+
+//catalog
+.links-next-page
+  display: flex
+  align-items: center
+  font-size: 14.5px
+  font-weight: bold
+  width: fit-content
+  margin: 0 0 0 auto
+
+.links-grey
+  color: $text
+  &:hover
+    color: $accent
+  &__icon
+    margin: 0 0 0 17px
+    display: flex
+    align-items: center
+    justify-content: center
+    width: 11px
+
+.catalog
+  padding: 83px 0 105px
+
+.pagination
+  display: flex
+  align-items: center
+  width: 100%
+  margin: 26px 0 0
+
+
+.page-item
+  &:first-child
+    margin: 0 27px 0 0
+    .page-link
+      border-radius: 0
+  &:last-child
+    margin: 0 0 0 27px
+    .page-link
+      border-radius: 0
+
+.page-item.active
+  .page-link
+    background: $accent
+    border-color: $accent
+
+.page-link
+  padding: 0
+  display: flex
+  align-items: center
+  justify-content: center
+  text-align: center
+  border: solid 1px #363636
+  width: 42px
+  height: 42px
+  background: transparent
+  border-radius: 0
+  font-size: 17.5px
+  font-weight: bold
+  color: $text
+  &:hover
+    background: $accent
+    border-color: $accent
+    color: #fff
+
+.mb-85
+  margin-bottom: 85px
+
+.sidebar
+  max-width: 488px
+  width: 100%
+
+.sidebar-close
+  width: 20px
+  height: 20px
+  position: relative
+  display: none
+  cursor: pointer
+  &:before, &:after
+    content: ''
+    position: absolute
+    left: 10px
+    top: 0
+    width: 2px
+    height: 100%
+    background: $text
+    border-radius: 3px
+  &:before
+    transform: rotate(45deg)
+  &:after
+    transform: rotate(135deg)
+
+.sidebar-box
+  width: 100%
+  padding: 36px 29px 37px
+  border: solid 1px #363636
+  h3
+    margin: 0 0 78px
+    width: 100%
+
+
+.form-filter
+  width: 100%
+  button
+    justify-content: space-between
+    height: 92px
+    padding: 0 53px 0 67px
+    font-size: 27.5px
+    margin: 100px 0 0
+    width: 100%
+    .btn-icon
+      width: 17px
+  input
+    border: solid 1px #363636
+    height: 56px
+    padding: 0 0 0 64px
+    font-size: 32.5px
+    color: #363636
+    font-weight: bold
+  .input-text
+    position: absolute
+    top: 50%
+    transform: translate(0,-50%)
+    left: 23px
+    color: #787878
+    font-size: 20px
+
+
+.range_val
+  width: 100%
+  display: flex
+  align-items: flex-start
+  justify-content: space-between
+  flex-wrap: wrap
+
+.inp-group
+  width: calc(50% - 16px)
+  position: relative
+
+.slider-range.ui-widget.ui-widget-content
+  border: none
+
+
+.slider-range
+  width: 100%
+  margin: 40px 0 0
+  background: #363636
+  border: none
+    radius: 0
+  height: 9px
+  .ui-widget-header
+    background: $text
+  .ui-slider-handle
+    box-shadow: 8px 8.9px 27px 0 rgba(4, 4, 4, 0.12)
+    border: solid 1px #363636
+      radius: 50%
+    cursor: pointer
+    background-color: #fff
+    outline: none
+    width: 37px
+    height: 37px
+    top: -14px
+
+.catalog-content
+  width: calc(100% - 488px)
+  padding: 0 0 0 60px
+
+.product-card
+  padding: 24px 25px 45px
+  h3
+    min-height: auto
+    margin: 0 0 23px
+    font-size: 20px
+  .technique-card__body
+    padding: 16px 0 0
+    height: calc(100% - 270px)
+  .technique-card__img
+    height: 270px
+    padding: 0 0 25px
+  .btn
+    height: 64px
+    margin: 20px 0 0
+    width: 100%
+    max-width: none
+    font-size: 19px
+    padding: 0 36px 0 45px
+    .btn-icon
+      width: 12px
+  .box-text
+    margin: 0
+    border: solid 1px #363636
+    background: #fff
+    width: 100%
+    padding: 20px
+
+.list-characteristics
+  color: #b3b3b3
+  font-size: 11px
+  li
+    margin: 0 0 8px
+    width: 100%
+    display: flex
+    align-items: center
+    justify-content: space-between
+    &:last-child
+      margin: 0
+
+//product-page
+.product-page
+  padding: 98px 0 90px
+  h1
+    font-size: 51px
+    margin: 0 0 52px
+
+.product-page-wrapper
+  background: #fff
+  width: 100%
+  padding: 77px 87px 73px 95px
+  box-shadow: 8px 8.9px 27px 0 rgba(4, 4, 4, 0.12)
+  margin: 0 0 95px
+
+
+.product-page__img
+  width: 100%
+  display: flex
+  align-items: center
+  justify-content: center
+  padding: 0 70px 0 0
+  img
+    width: 100%
+
+.product-page__content
+  width: 100%
+  .box-text
+    font-size: 24px
+    max-width: 700px
+
+.line-wrapper
+  display: flex
+  align-items: center
+  justify-content: space-between
+  flex-wrap: wrap
+  margin: 44px 0 28px
+  h4
+    font-size: 24px
+    font-weight: 600
+
+.btn-question
+  height: 49px
+  max-width: 265px
+  width: 100%
+  font-size: 14px
+  background: #f2f2f2
+
+.product-info
+  width: 100%
+  border: solid 1px #363636
+  padding: 46px 63px  45px 40px
+  h4
+    margin: 0 0 20px
+    font-size: 18px
+    font-weight: bold
+
+.list-disc
+  list-style: disc
+  font-size: 18px
+  padding: 0 0 0 20px
+  li
+    margin: 0 0 10px
+    &:last-child
+      margin: 0
+
+
+.nav-tabs
+  width: 100%
+  font-size: 24px
+  font-weight: 600
+  .nav-item
+    flex: 1
+    border: solid 1px #363636
+    margin: 0 0 -1px
+    &:last-child
+      margin: 0
+  .nav-link
+    padding: 30px 20px
+    text-align: center
+    color: #000
+    margin: 0
+    display: flex
+    align-items: center
+    justify-content: center
+    flex-wrap: wrap
+    height: 100%
+    width: 100%
+  .nav-link.active
+    background: #fff
+    border-radius: 0
+    color: #000
+
+.tab-content
+  width: 100%
+
+.tab-pane
+  padding: 50px 0 0
+
+.list-characteristics-product
+  width: 100%
+  font-size: 12px
+  strong
+    display: inline
+    font-weight: bold
+  li
+    padding: 1px 40px 5px 20px
+    border-bottom: solid 1px #363636
+    min-height: 55px
+    display: flex
+    flex-wrap: wrap
+    align-items: center
+
+//aggregation
+.aggregation
+  background: #fff
+  padding: 75px 0 85px
+  .pagination
+    justify-content: flex-end
+  h2
+    text-transform: none
+    font-size: 50px
+    margin: 0 0 40px
+
+.aggregation-box
+  max-width: 348px
+  width: 100%
+  margin: 0 auto
+  .box-text
+    font-size: 11px
+    padding: 0
+    border: none
+    color: #000
+    margin: 0 0 40px
+    max-width: 185px
+  .technique-card__img
+    height: 188px
+  .technique-card__body
+    height: calc(100% - 188px)
+  .btn
+    margin: auto 0 0
+  h3
+    min-height: auto
+
+
 
 @import "media"
 // Всегда в конце
